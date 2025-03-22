@@ -252,13 +252,26 @@ button:hover {
     left: 80px;
 }
 #mac-laptop {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     position: absolute;
     top:  575px;
     left: 200px;
 }
 
+#computer {
+    position: absolute;
+    top:  2100px;
+    left: 30px;
+}
+
+#luvu {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top:  1850px;
+    right: 80px;
+}
 /* Give the elements around the window a float effect */
 
 .float:hover {

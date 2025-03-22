@@ -1,0 +1,389 @@
+body {
+    background-color: #A9A9A9;
+    margin: 0; 
+    padding: 0;  /* Removes default margin and padding */
+    /* Ensures consistency across different browsers */
+    font-family: "VT323";
+    overflow-x: hidden; 
+}
+
+/* Make Floppy id image smaller and align with H1 element*/
+
+#floppy {
+    width: 75px;
+    height: 75px;
+    margin: 75px 0 0 5px; 
+    
+}
+
+header {
+    display: flex; /* Flexbox layout */
+}
+
+ul {
+    display: flex;
+    justify-content: space-between; /* Puts space between li elements */
+    gap: 100px;
+    width: 100%;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    list-style-type: none; /* Removes bullet points */
+}
+
+nav a {
+    font-size: 30px;
+    margin-top: 70px;
+    text-decoration: none; /* Removes underline from links */
+    color: #000000; /* Black text color */
+    padding: 15px 25px; /* Increases padding to make links more clickable */
+    transition: background-color 0.3s, color 0.3s, transform 0.1s; /* Adds transition for hover and click effects */
+    display: flex; /* Flexbox layout */
+}
+
+nav a:hover {
+    background-color: #000000; /* Changes background color on hover */
+    color: #FFFFFF; /* Changes text color on hover */
+}
+
+nav a:active {
+    transform: scale(0.95); /* Adds a "button press" effect */
+}
+
+nav {
+    margin-left: 200px; /* Adds space between nav and logo */
+}
+
+a {
+    padding: 10px 20px; /* Adds padding to links */
+    text-decoration: none; /* Removes underline from links */
+    color: #000000; /* Black text color */
+    box-shadow: -2px -2px #e0dede, -2px 0 #e0dede, 0 -2px #e0dede, -4px -4px white, -4px 0 white, 0 -4px white, 2px 2px #818181, 0 2px #818181, 2px 0 #818181, 2px -2px #e0dede, -2px 2px #818181, -4px 2px white, -4px 4px black, 4px 4px black, 4px 0 black, 0 4px black, 2px -4px white, 4px -4px black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* H elements will be styled here */
+h1 {
+    display: flex;
+    color: #000000;
+    text-align: center;
+    font-size: 75px;
+    font-family: "DotGothic16";
+    padding: 5px 15px 0 30px; /* Moves H1 element to the right */
+}
+
+h2 {
+    color: #000000;
+    text-align: center;
+    font-size: 45px;
+    font-family: "DotGothic16";
+}
+
+h3 {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 35px;
+    font-family: "DotGothic16";
+}
+
+img {
+    display: block; /* Centers image */
+    margin-left: auto; /* Centers image */
+    margin-right: auto; /* Centers image */
+    width: 175px;
+}
+
+.window {
+    font-size: 25px;
+    margin: 20px auto;
+    width: 700px;
+    border: 2px solid #d3d3d3;
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: 8px 8px 6px 4px #696969;
+    position: relative;
+    margin-bottom: 200px;
+}
+
+.window::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-color: #00008B;
+    border-bottom: 2px solid #d3d3d3;
+}
+
+.window2 {
+    font-size: 25px;
+    margin: 20px auto;
+    width: 900px;
+    border: 2px solid #d3d3d3;
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: 8px 8px 6px 4px #696969;
+    position: relative;
+}
+
+.window2::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-color: #00008B;
+    border-bottom: 2px solid #d3d3d3;
+}
+
+/* Cursor effect will be added to give the terminal a more authentic feel */
+
+.cursor-effect::after {
+    content: "|";
+    display: inline-block;
+    animation: blink 0.7s infinite;
+}
+
+.buttons {
+    position: absolute;
+    top: 1px; /* Adjust distance from the top */
+    right: 1px; /* Adjust distance from the right */
+    display: flex;
+    
+}
+
+button {
+    background-color: #d3d3d3;
+    font-size: 20px;
+}
+
+button:hover {
+    opacity: 0.9;
+    background-color: #d3d3d3;
+
+}
+
+.window > p {
+    padding: 20px;
+    
+}
+
+.window2 > p {
+    padding: 20px;
+    
+}
+
+/* wiggle effect for the windows */
+.wiggle:hover {
+    animation: wiggle 0.3s ease-in-out;
+}
+
+.dashed {
+    height: 3px;
+    width: 100%;
+    background-image: repeating-linear-gradient(
+        90deg,
+        #00008B 0px,
+        #00008B 10px,
+        transparent 10px,
+        transparent 20px
+    );
+    animation: marquee 8s linear infinite;
+    border: none;
+}
+
+/* in this section we will style elements to go around the window */
+
+#floppy-disk {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top:  1100px;
+    right: 105px;
+    
+}
+
+#modem {
+    width: 175px;
+    height: 150px;
+    position: absolute;
+    top:  900px;
+    right: 80px;
+}
+
+#nokia-phone {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top:  1100px;
+    left: 105px;
+}
+
+#vintage-phone {
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    top:  1300px;
+    right: 200px;
+}
+
+#windows-98 {
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    top:  500px;
+    right: 50px;
+}
+#floppy-disk2 {
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    top:  1300px;
+    left: 200px;
+    
+}
+
+#ibm-keyboard {
+    position: absolute;
+    top:  900px;
+    left: 80px;
+}
+#mac-laptop {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top:  575px;
+    left: 200px;
+}
+
+/* Give the elements around the window a float effect */
+
+.float:hover {
+    animation: float 2s ease-in-out infinite;
+    transform: scale(1.1);
+}
+
+.marquee-container {
+    width: 100%;
+    background-color: #00008B;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#marquee {
+    display: inline-block;
+    animation: marquee 10s linear  infinite;
+}
+
+#rainbow {
+    width: 50%;
+    margin-top: 50px;
+}
+
+
+/* We styling the form now */
+
+/* Form container first. It will be given display flex and centered */
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    border: 2px solid #d3d3d3;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 25px;
+    box-shadow: 8px 8px 6px 4px #696969;
+}
+
+input {
+    padding: 10px;
+    font-size: 20px;
+    font-family: "VT323";
+}
+
+label {
+    padding: 10px;
+}
+
+#submit {
+    box-shadow: -2px -2px #e0dede, -2px 0 #e0dede, 0 -2px #e0dede, -4px -4px white, -4px 0 white, 0 -4px white, 2px 2px #818181, 0 2px #818181, 2px 0 #818181, 2px -2px #e0dede, -2px 2px #818181, -4px 2px white, -4px 4px black, 4px 4px black, 4px 0 black, 0 4px black, 2px -4px white, 4px -4px black;
+    font-family: "VT323";
+    width: 150px;
+    margin: 10px;
+}
+
+textarea {
+    padding: 10px;
+    font-size: 20px;
+    font-family: "VT323";
+}
+
+/* Specifically for centering the submit button */
+
+#btn-center {
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, 20px);
+    }
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(-1000px);
+    }
+    to {
+        transform: translateX(1000px);
+    }
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(1deg); }
+    50% { transform: rotate(-1deg); }
+    75% { transform: rotate(1deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(50vh) rotate(20deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(-20deg);
+        opacity: 0;
+    }
+}
+
